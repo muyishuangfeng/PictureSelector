@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <com.yk.silence.photoselector.GalleryImageView
+        android:id="@+id/ivGalleryFolderImage"
+        android:layout_width="@dimen/dp_86"
+        android:layout_height="@dimen/dp_86"
+        android:layout_margin="@dimen/dp_10"
+        android:contentDescription="@null"
+        android:src="@drawable/gallery_pick_photo" />
+
+    <TextView
+        android:id="@+id/tvGalleryFolderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@+id/ivGalleryFolderImage"
+        android:hint="@string/gallery_folder_name"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="@dimen/sp_18" />
+
+    <TextView
+        android:id="@+id/tvGalleryPhotoNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGalleryFolderName"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@+id/ivGalleryFolderImage"
+        android:hint="@string/gallery_photo_num"
+        android:textColor="@color/colorGray"
+        android:textColorHint="@color/colorGray"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        android:id="@+id/ivGalleryIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dp_10"
+        android:contentDescription="@null"
+        android:src="@drawable/gallery_pick_selected" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/ivGalleryFolderImage"
+        android:background="@color/gallery_separation" />
+
+</RelativeLayout>
